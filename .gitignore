@@ -8,8 +8,7 @@
 *.png
 
 # Server data
-*tmp1zvfu2xu/
-
+dagster_university/tmp*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
