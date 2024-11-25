@@ -1,0 +1,7 @@
+[32m2024-11-25 10:52:01 -0600[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - e93c71e2-78b4-4779-a737-40f18ca4d909 - 43228 - LOGS_CAPTURED - Started capturing logs in process (pid: 43228).
+[32m2024-11-25 10:52:01 -0600[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - e93c71e2-78b4-4779-a737-40f18ca4d909 - 43228 - taxi_trips - STEP_START - Started execution of step "taxi_trips".
+[32m2024-11-25 10:52:03 -0600[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - e93c71e2-78b4-4779-a737-40f18ca4d909 - 43228 - taxi_trips - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[32m2024-11-25 10:52:03 -0600[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - e93c71e2-78b4-4779-a737-40f18ca4d909 - taxi_trips - Writing file at: /home/ben/dagster-university/dagster-and-dbt/tmp7zzxw8qi/storage/taxi_trips/2023-03-01 using PickledObjectFilesystemIOManager...
+[32m2024-11-25 10:52:03 -0600[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - e93c71e2-78b4-4779-a737-40f18ca4d909 - 43228 - taxi_trips - ASSET_MATERIALIZATION - Materialized value taxi_trips.
+[32m2024-11-25 10:52:03 -0600[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - e93c71e2-78b4-4779-a737-40f18ca4d909 - 43228 - taxi_trips - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2024-11-25 10:52:03 -0600[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - e93c71e2-78b4-4779-a737-40f18ca4d909 - 43228 - taxi_trips - STEP_SUCCESS - Finished execution of step "taxi_trips" in 1.37s.

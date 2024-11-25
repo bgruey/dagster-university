@@ -1,0 +1,19 @@
+Running with dbt=1.8.7
+Registered adapter: duckdb=1.9.0
+Unable to do partial parsing because config vars, config profile, or config target have changed
+[[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+Found 4 models, 2 data tests, 2 sources, 535 macros
+
+Concurrency: 1 threads (target='dev')
+
+1 of 1 START sql incremental model main.daily_metrics .......................... [RUN]
+1 of 1 OK created sql incremental model main.daily_metrics ..................... [[32mOK[0m in 0.13s]
+
+Finished running 1 incremental model in 0 hours 0 minutes and 0.24 seconds (0.24s).
+
+[32mCompleted successfully[0m
+
+Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1

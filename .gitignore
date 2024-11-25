@@ -9,6 +9,7 @@
 
 # Server data
 dagster_university/tmp*
+dagster-and-dbt/temp*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

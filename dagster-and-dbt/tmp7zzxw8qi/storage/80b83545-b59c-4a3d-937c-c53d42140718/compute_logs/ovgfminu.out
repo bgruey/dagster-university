@@ -1,0 +1,24 @@
+Running with dbt=1.8.7
+Registered adapter: duckdb=1.9.0
+Found 2 models, 2 data tests, 2 sources, 535 macros
+
+Concurrency: 1 threads (target='dev')
+
+1 of 4 START sql table model main.stg_trips .................................... [RUN]
+1 of 4 OK created sql table model main.stg_trips ............................... [[32mOK[0m in 1.33s]
+2 of 4 START sql table model main.stg_zones .................................... [RUN]
+2 of 4 ERROR creating sql table model main.stg_zones ........................... [[31mERROR[0m in 0.02s]
+3 of 4 SKIP test accepted_values_stg_zones_borough__Manhattan__Bronx__Brooklyn__Queens__Staten_Island__EWR  [[33mSKIP[0m]
+4 of 4 SKIP test not_null_stg_zones_zone_id .................................... [[33mSKIP[0m]
+
+Finished running 2 table models, 2 data tests in 0 hours 0 minutes and 1.46 seconds (1.46s).
+
+[31mCompleted with 1 error and 0 warnings:[0m
+
+  Runtime Error in model stg_zones (models/staging/stg_zones.sql)
+  Binder Error: Referenced column "zone_population" not found in FROM clause!
+  Candidate bindings: "raw_zones.zone", "raw_zones.zone_id", "raw_zones.borough"
+  LINE 20:     zone_population
+               ^
+
+Done. PASS=1 WARN=0 ERROR=1 SKIP=2 TOTAL=4

@@ -1,0 +1,20 @@
+Running with dbt=1.8.7
+Registered adapter: duckdb=1.9.0
+Found 2 models, 2 data tests, 2 sources, 535 macros
+
+Concurrency: 1 threads (target='dev')
+
+1 of 4 START sql table model main.stg_trips .................................... [RUN]
+1 of 4 OK created sql table model main.stg_trips ............................... [[32mOK[0m in 1.42s]
+2 of 4 START sql table model main.stg_zones .................................... [RUN]
+2 of 4 OK created sql table model main.stg_zones ............................... [[32mOK[0m in 0.05s]
+3 of 4 START test accepted_values_stg_zones_borough__Manhattan__Bronx__Brooklyn__Queens__Staten_Island__EWR  [RUN]
+3 of 4 PASS accepted_values_stg_zones_borough__Manhattan__Bronx__Brooklyn__Queens__Staten_Island__EWR  [[32mPASS[0m in 0.03s]
+4 of 4 START test not_null_stg_zones_zone_id ................................... [RUN]
+4 of 4 PASS not_null_stg_zones_zone_id ......................................... [[32mPASS[0m in 0.02s]
+
+Finished running 2 table models, 2 data tests in 0 hours 0 minutes and 1.65 seconds (1.65s).
+
+[32mCompleted successfully[0m
+
+Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
