@@ -1,3 +1,15 @@
+
+# data files
+*.csv
+*.duckdb
+*.geojson
+*.json
+*.parquet
+*.png
+
+# Server data
+dagster_university/tmp*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
